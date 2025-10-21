@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bautizo & Primer Año — Madelyn Hernández Pavana</title>
+  <meta name="description" content="Invitación al Bautizo y Primer Año de Madelyn Hernández Pavana — 16 de noviembre. Parroquia San Francisco de Asís, 12:00 p.m. y recepción en Salón Luz de Luna, 2:30 p.m." />
+  <meta property="og:title" content="Bautizo & Primer Año — Madelyn" />
+  <meta property="og:description" content="Nuestra sonrisa más pura, nuestra luz: Madelyn cumple su primer año y te invita con el corazón abierto." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="madelyn.jpg?v=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b0c0e;
+      --ink:#f5f6f7;
+      --muted:#aeb4bf;
+      --silver:#cfd2d8;
+      --silver-2:#e6e9ef;
+      --card: rgba(255,255,255,.06);
+      --border: rgba(255,255,255,.12);
+      --radius:22px;
+      --shadow: 0 10px 40px rgba(230,235,245,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;background:
+        radial-gradient(1200px 600px at 120% -10%, #171a1f 0%, transparent 60%),
+        radial-gradient(1000px 800px at -20% 110%, #14171b 0%, transparent 60%),
+        var(--bg);
+      color:var(--ink); font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      letter-spacing:.2px;
+    }
+    body::before{
+      content:""; position:fixed; inset:0; pointer-events:none;
+      background:
+        radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.35) 40%, transparent 45%),
+        radial-gradient(2px 2px at 80% 60%, rgba(255,255,255,.25) 40%, transparent 45%),
+        radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,.18) 40%, transparent 45%),
+        radial-gradient(1px 1px at 70% 20%, rgba(255,255,255,.18) 40%, transparent 45%);
+      opacity:.25;
+    }
+    .wrap{max-width:860px; margin:0 auto; padding:32px 18px 80px}
+    .hero{
+      position:relative; border-radius:calc(var(--radius) + 6px);
+      padding:28px 20px 30px; overflow:hidden; text-align:center;
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+      border:1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .ring{
+      position:absolute; inset:-40% -20% auto auto; width:520px; height:520px;
+      border-radius:50%;
+      background: conic-gradient(from 120deg,
+        #1b1e23, #9fa7b2 18%, #e6e9ef 34%, #c5cbd6 52%, #2a2d33 68%, #c0c6d0 84%, #1b1e23);
+      filter: blur(28px) saturate(1.1) brightness(1.05);
+      opacity:.28; animation: spin 28s linear infinite;
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .title{
+      font-family:"Cormorant Garamond", serif;
+      font-size: clamp(28px, 5.6vw, 54px);
+      margin:6px 0 8px;
+      text-shadow: 0 2px 18px rgba(230,235,245,.18);
+      letter-spacing:.4px;
+    }
+    .subtitle{font-weight:300; color:var(--muted)}
+    .accent{color:var(--silver-2); font-weight:600}
+    .divider{
+      width:min(220px,60%); height:1px; margin:16px auto 18px;
+      background:linear-gradient(90deg, transparent, var(--silver-2), transparent);
+      opacity:.7;
+    }
+    .stamp{
+      display:inline-block; margin:10px auto 16px; padding:8px 14px;
+      border-radius:999px; border:1px solid rgba(230,235,245,.35);
+      background:linear-gradient(180deg, rgba(230,235,245,.18), rgba(255,255,255,.06));
+      font-weight:600; color:#111;
+      color:var(--ink);
+    }
+    .photo{
+      width:100%; max-height:460px; object-fit:cover; border-radius:20px;
+      box-shadow: 0 10px 30px rgba(255,255,255,.12);
+      border:1px solid rgba(230,235,245,.25);
+      margin-bottom:16px;
+    }
+    .intro{
+      max-width:720px; margin:10px auto 0; color:var(--silver-2);
+      font-size:16px; line-height:1.6;
+    }
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+      padding:18px 16px; backdrop-filter: blur(8px);
+      text-align:left;
+    }
+    .grid{display:grid; gap:14px; margin-top:16px}
+    @media(min-width:680px){ .grid{grid-template-columns:1fr 1fr} }
+    .cell h3{
+      margin:0 0 6px; font-family:"Cormorant Garamond", serif;
+      font-size:22px; font-weight:600; color:#eef1f4;
+    }
+    .cell p{margin:0; color:var(--muted); font-size:15px; line-height:1.6}
+    .btns{display:grid; gap:12px; margin-top:14px}
+    @media(min-width:520px){ .btns{grid-template-columns:repeat(2,1fr)} }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 14px; border-radius:14px; text-decoration:none; color:#0e1114; font-weight:700;
+      background:linear-gradient(180deg, var(--silver-2), var(--silver));
+      border:1px solid rgba(255,255,255,.25);
+      box-shadow: 0 6px 18px rgba(200,210,225,.35);
+      transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+    }
+    .btn:hover{ transform: translateY(-2px); filter:saturate(1.05); box-shadow:0 10px 26px rgba(200,210,225,.45) }
+    .ghost{
+      color:var(--ink); background:transparent;
+      border:1px solid rgba(230,235,245,.35);
+    }
+    .ghost:hover{ background:rgba(230,235,245,.08); }
+    .timeline{ margin-top:22px; display:grid; gap:12px }
+    .row{
+      display:grid; grid-template-columns:auto 1fr; gap:10px; align-items:start;
+      padding:12px; border:1px dashed rgba(230,235,245,.35); border-radius:14px;
+      background:rgba(230,235,245,.04);
+      color:var(--muted)
+    }
+    .dot{
+      width:14px; height:14px; border-radius:999px; margin-top:4px;
+      background: radial-gradient(circle at 35% 35%, #ffffff 0 35%, #cfd2d8 40% 60%, #2b2f36 61%);
+      box-shadow:0 0 0 3px rgba(230,235,245,.25);
+    }
+    .foot{
+      margin-top:22px; text-align:center; color:var(--muted); font-size:14px;
+    }
+    .sig{ font-family:"Cormorant Garamond", serif; color:#e6e9ef }
+
+    /* Botón fallback para música */
+    .music-btn{
+      position:fixed; right:16px; bottom:16px;
+      padding:10px 12px; border-radius:999px; border:1px solid rgba(230,235,245,.35);
+      background:linear-gradient(180deg, var(--silver-2), var(--silver));
+      color:#0e1114; font-weight:700; cursor:pointer; box-shadow:0 8px 20px rgba(200,210,225,.35);
+    }
+    .music-btn[hidden]{ display:none; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="ring"></div>
+
+      <div class="stamp">16 de noviembre</div>
+
+      <!-- FOTO EN ENCABEZADO -->
+      <img src="madelyn.jpg?v=1" alt="Madelyn sonriendo" class="photo">
+
+      <h1 class="title">Bautizo & Primer Año</h1>
+      <div class="subtitle">de <span class="accent">Madelyn Hernández Pavana</span></div>
+      <div class="divider"></div>
+
+      <!-- TEXTO DE INVITACIÓN -->
+      <p class="intro"><strong>“Nuestra sonrisa más pura, nuestra luz: Madelyn cumple su primer año y te invita con el corazón abierto.”</strong></p>
+
+      <div class="grid">
+        <!-- CEREMONIA -->
+        <section class="cell card">
+          <h3>Ceremonia Religiosa</h3>
+          <p>
+            <strong>Parroquia San Francisco de Asís</strong><br>
+            Arista No. 200, C.P. 42050, Pachuca de Soto, Hidalgo, México<br>
+            <em>Hora: 12:00 p. m.</em>
+          </p>
+          <div class="btns">
+            <a class="btn"
+              href="https://www.google.com/maps?q=Arista+200,+42050+Pachuca+de+Soto,+Hidalgo,+M%C3%A9xico"
+              target="_blank" rel="noopener">Ver misa</a>
+            <a class="btn ghost"
+              href="https://wa.me/527715034008?text=¡Hola!%20Confirmo%20mi%20asistencia%20al%20Bautizo%20y%20Primer%20Año%20de%20Madelyn%20Hernández%20Pavana%20🎉✨"
+              target="_blank" rel="noopener">Confirmar (misa)</a>
+          </div>
+        </section>
+
+        <!-- RECEPCIÓN -->
+        <section class="cell card">
+          <h3>Recepción</h3>
+          <p>
+            <strong>Salón Luz de Luna</strong><br>
+            De Capulín 235, Rinconada del Álamo, 42184 Privada del Álamo, Hgo.<br>
+            <em>Inicio: 2:30 p. m.</em>
+          </p>
+          <div class="btns">
+            <a class="btn"
+              href="https://www.google.com/maps?q=De+Capul%C3%ADn+235,+Rinconada+del+%C3%81lamo,+42184+Privada+del+%C3%81lamo,+Hidalgo"
+              target="_blank" rel="noopener">Ver recepción</a>
+            <a class="btn ghost"
+              href="https://wa.me/527715034008?text=¡Hola!%20Confirmo%20mi%20asistencia%20al%20Bautizo%20y%20Primer%20Año%20de%20Madelyn%20Hernández%20Pavana%20🎉✨"
+              target="_blank" rel="noopener">Confirmar (fiesta)</a>
+          </div>
+        </section>
+      </div>
+
+      <!-- TIMELINE -->
+      <div class="timeline">
+        <div class="row">
+          <div class="dot"></div>
+          <div><strong>12:00 p. m.</strong> Inicio de misa en Parroquia San Francisco de Asís</div>
+        </div>
+        <div class="row">
+          <div class="dot"></div>
+          <div><strong>2:30 p. m.</strong> Recepción en <em>Salón Luz de Luna</em> — abrazos, fotos y pastel</div>
+        </div>
+      </div>
+
+      <p class="foot">
+        Con amor, la familia <span class="sig">Hernández Pavana</span><br>
+        Dress code libre — ven a compartir este día especial ✨
+      </p>
+
+      <div class="btns" style="margin-top:8px">
+        <a class="btn" style="grid-column:1/-1"
+          href="https://wa.me/527715034008?text=¡Hola!%20Confirmo%20mi%20asistencia%20al%20Bautizo%20y%20Primer%20Año%20de%20Madelyn%20Hernández%20Pavana%20🎉✨"
+          target="_blank" rel="noopener">Confirmar asistencia</a>
+      </div>
+    </header>
+  </div>
+
+  <!-- AUDIO -->
+  <audio autoplay loop id="bg-music">
+    <source src="somewhere-over-the-rainbow.mp3?v=1" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <!-- Botón fallback (solo aparece si el navegador bloquea el autoplay) -->
+  <button class="music-btn" id="musicBtn" hidden>🎵 Activar música</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const music = document.getElementById("bg-music");
+      const btn = document.getElementById("musicBtn");
+      music.volume = 0.4;
+
+      // Intento de autoplay
+      const tryPlay = () => music.play().catch(() => {
+        // Si falla (política del navegador), mostramos botón
+        btn.hidden = false;
+      });
+
+      tryPlay();
+
+      // Si el usuario interactúa con la página, reintentar
+      ['click','touchstart','scroll','keydown'].forEach(evt => {
+        window.addEventListener(evt, tryPlay, { once: true });
+      });
+
+      // Botón manual de activación
+      btn.addEventListener('click', () => {
+        music.play().then(() => { btn.hidden = true; }).catch(() => {});
+      });
+    });
+  </script>
+</body>
+</html>
